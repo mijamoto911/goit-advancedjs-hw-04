@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery</title>
+    
+    <script type="module" crossorigin src="/goit-advancedjs-hw-04/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-04/assets/vendor-29bc32e7.js">
+    <link rel="stylesheet" href="/goit-advancedjs-hw-04/assets/index-2475e5ce.css">
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="container">
+        <form class="search-form js-search-form">
+          <input
+            class="search-input js-search-input"
+            type="text"
+            name="user_query"
+            required
+          />
+          <button class="search-btn" type="submit">search</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+        <div class="loader-wrapper">
+          <span class="loader is-hidden js-loader"></span>
+        </div>
+      </div>
+      <button class="load-more-btn js-load-more-btn is-hidden">Load more</button>
+       
+      </button>
+    </section>
+    
+  </body>
+</html>
