@@ -1,3 +1,5 @@
+// Refactoring
+
 import { createGalleryCard } from './js/render-functions';
 import { searchPhotos } from './js/pixabay-api';
 import iziToast from 'izitoast';
