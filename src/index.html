@@ -1,24 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/gallery.css" />
   </head>
+
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+    <section class="section">
+      <div class="container">
+        <form class="search-form js-search-form">
+          <input
+            class="search-input js-search-input"
+            type="text"
+            name="user_query"
+            required
+          />
+          <button class="search-btn" type="submit">search</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+        <div class="loader-wrapper">
+          <span class="loader is-hidden js-loader"></span>
+        </div>
+      </div>
+      <button class="load-more-btn js-load-more-btn is-hidden">Load more</button>
+       
+      </button>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>
